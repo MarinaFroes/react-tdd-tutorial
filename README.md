@@ -3,6 +3,17 @@
 
 This app was created by following the [CodeItWrong React TDD Livestream](https://www.youtube.com/watch?v=0aAdglT39go&list=PLXXnezSEtvNMlfJFd1Z2wilxymcOaVl9Q&index=2&t=0s) by Josh Justice. My goal is to learn TDD in React.
 
+## How to install and run it
+
+- Download the files, cd into root directory and run:
+```bash
+# Install dependencies
+$ yarn add
+
+# Run the app
+$ yarn start
+```  
+
 ## References and Resources
 
 - [CodeItWrong React TDD Livestream](https://www.youtube.com/watch?v=0aAdglT39go&list=PLXXnezSEtvNMlfJFd1Z2wilxymcOaVl9Q&index=2&t=0s) by Josh Justice.
