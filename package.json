@@ -1,0 +1,19 @@
+{
+  "name": "react-tdd",
+  "version": "0.1.0",
+  "description": "App following the CodingItWrong react-tdd-livestream by Josh Justice",
+  "main": "index.js",
+  "repository": "git@github.com:MarinaFroes/react-tdd-tutorial",
+  "author": "Josh Justice <me@codingitwrong.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
