@@ -1,12 +1,11 @@
 import React from 'react';
+import RestaurantListPage from './RestaurantListPage';
 
 class App extends React.Component {
-  state = { name: 'Marina' }
-
   render() {
     return (
-      <div className="hello">
-        Hello, Marina!
+      <div>
+        <RestaurantListPage />
       </div>
     );
   }
