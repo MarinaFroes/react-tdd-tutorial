@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     'jest',
     'cypress',
+    'react'
   ],
   env: {
     'jest/globals': true,
