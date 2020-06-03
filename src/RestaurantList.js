@@ -1,17 +1,19 @@
 import React from 'react';
 import 'materialize-css';
-import { Collection, CollectionItem } from 'react-materialize';
+import { Col, Collection, CollectionItem } from 'react-materialize';
 
 const RestaurantList = ({ restaurantNames }) => (
-  <Collection>
-    {
-      restaurantNames.map(restaurantName => (
-        <CollectionItem key={restaurantName}>
-          {restaurantName}
-        </CollectionItem>
-      ))
-    }
-  </Collection>
+  <Col m={6} s={12}>
+    <Collection>
+      {
+        restaurantNames.map(restaurantName => (
+          <CollectionItem key={restaurantName}>
+            {restaurantName}
+          </CollectionItem>
+        ))
+      }
+    </Collection>
+  </Col>
 );
 
 export default RestaurantList;
