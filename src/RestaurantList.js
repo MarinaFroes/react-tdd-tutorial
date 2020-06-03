@@ -1,6 +1,6 @@
 import React from 'react';
 import 'materialize-css';
-import { Col, Collection, CollectionItem } from 'react-materialize';
+import { Collection, CollectionItem } from 'react-materialize';
 
 const RestaurantList = ({ restaurantNames }) => (
   <Collection>
