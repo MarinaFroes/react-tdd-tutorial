@@ -3,9 +3,13 @@ import 'materialize-css';
 import { Collection, CollectionItem } from 'react-materialize';
 
 const RestaurantList = ({ restaurantNames }) => (
-  <Collection>
+  <Collection header="Restaurants">
     {
-      restaurantNames.map(restaurantName => (
+      restaurantNames.length === 0 ? (
+        <CollectionItem style={{ color: 'grey' }}>
+          You didn't add any restaurants yet
+        </CollectionItem>
+      ) : restaurantNames.map(restaurantName => (
         <CollectionItem key={restaurantName}>
           {restaurantName}
         </CollectionItem>
