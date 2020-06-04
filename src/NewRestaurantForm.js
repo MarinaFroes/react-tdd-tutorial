@@ -20,24 +20,16 @@ class NewRestaurantForm extends Component {
     return (
       <Row>
         <TextInput
-          s={12}
-          m={8}
-          l={10}
+          s={12} m={8} l={10}
           id="TextInput-4"
           label="Restaurant name"
           data-test="newRestaurantName"
           onChange={this.handleTextChange}
         />
         <Button
-          s={12}
-          m={4}
-          l={2}
+          s={12} m={4} l={2}
           data-test="saveNewRestaurantButton"
           onClick={this.handleSave}
-          style={{
-            marginTop: '20px',
-            marginLeft: '20px',
-          }}
           waves="light"
         >
           Save

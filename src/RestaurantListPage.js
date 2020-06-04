@@ -46,8 +46,7 @@ class RestaurantListPage extends Component {
         </Row>
         <Row>
           {
-            showNewRestaurantForm
-            && <NewRestaurantForm onSave={this.handleAddRestaurant} />
+            showNewRestaurantForm && <NewRestaurantForm onSave={this.handleAddRestaurant} />
           }
         </Row>
         <Row>
