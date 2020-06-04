@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'materialize-css';
-import { Button, TextInput } from 'react-materialize';
+import { Row, Button, TextInput } from 'react-materialize';
 
 class NewRestaurantForm extends Component {
   state = { inputText: '' };
@@ -18,17 +18,20 @@ class NewRestaurantForm extends Component {
 
   render() {
     return (
-      <div>
+      <Row>
         <TextInput
+          s={12}
+          m={8}
+          l={10}
           id="TextInput-4"
           label="Restaurant name"
           data-test="newRestaurantName"
           onChange={this.handleTextChange}
-          style={{
-            width: '50%',
-          }}
         />
         <Button
+          s={12}
+          m={4}
+          l={2}
           data-test="saveNewRestaurantButton"
           onClick={this.handleSave}
           style={{
@@ -39,7 +42,7 @@ class NewRestaurantForm extends Component {
         >
           Save
         </Button>
-      </div>
+      </Row>
     );
   }
 }
