@@ -8,7 +8,7 @@ This app was created by following the [CodeItWrong React TDD Livestream](https:/
 - Download the files, cd into root directory and run:
 ```bash
 # Install dependencies
-$ yarn add
+$ yarn install
 
 # Run the app
 $ yarn start
