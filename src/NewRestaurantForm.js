@@ -31,6 +31,7 @@ class NewRestaurantForm extends Component {
           data-test="saveNewRestaurantButton"
           onClick={this.handleSave}
           waves="light"
+          modal="close"
         >
           Save
         </Button>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'materialize-css';
-import { Row, Button } from 'react-materialize';
+import { Row, Button, Modal } from 'react-materialize';
 
 import NewRestaurantForm from './NewRestaurantForm';
 import RestaurantList from './RestaurantList';
@@ -28,27 +28,23 @@ class RestaurantListPage extends Component {
   }
 
   render() {
-    const { restaurantNames, showNewRestaurantForm } = this.state;
+    const { restaurantNames } = this.state;
     return (
       <div>
-        <Row>
-          <Button
-            data-test="addRestaurantButton"
-            onClick={this.handleShowNewRestaurantForm}
-            style={{
-              marginTop: '20px',
-              marginLeft: '20px',
-            }}
-            waves="light"
-          >
-            Add Restaurant
-          </Button>
-        </Row>
-        <Row>
-          {
-            showNewRestaurantForm && <NewRestaurantForm onSave={this.handleAddRestaurant} />
+        <Modal
+          header="New Restaurant"
+          trigger={
+            <Button
+              data-test="addRestaurantButton"
+              onClick={this.handleShowNewRestaurantForm}
+              waves="light"
+            >
+              Add Restaurant
+            </Button>
           }
-        </Row>
+        >
+          <NewRestaurantForm onSave={this.handleAddRestaurant} />
+        </Modal>
         <Row>
           <RestaurantList restaurantNames={restaurantNames} />
         </Row>
